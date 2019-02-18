@@ -1,0 +1,58 @@
+$w:100%;
+$h:100%;
+@mixin position($s: relative) {
+    position: $s;
+}
+
+html,
+body {
+    width: $w;
+    height: $h;
+}
+
+.main {
+    width: $w;
+    height: $h;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    flex: 1;
+}
+
+.section .botit .imgs {
+    @include position(relative);
+    width: $w;
+    height: 230px;
+}
+
+.section .botit .imgs>img {
+    width: $w;
+    height: $h;
+}
+
+.section .botit {
+    width: $w;
+    height: 50px;
+    background: #928B80;
+}
+
+.footer {
+    width: $w;
+    height: 44px;
+    display: flex;
+    background: #7D7873;
+}
+
+.footer span {
+    flex: 1;
+    color: #fff;
+}
+
+.footer span .bai {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: #77726E;
+}

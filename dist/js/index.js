@@ -1,0 +1,1 @@
+"use strict";function arvg(r,t){return r.style.background=t}arvg(document.body,"#fff");
